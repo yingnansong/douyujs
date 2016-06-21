@@ -1,2 +1,3 @@
-# douyu
-Wrapper for DouyuTV chatroom API
+DouyuTV API Wrapper
+===================
+

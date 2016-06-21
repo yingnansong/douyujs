@@ -1,0 +1,31 @@
+{
+  "name": "douyu",
+  "version": "0.1.0",
+  "description": "Wrapper for DouyuTV APIs",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yingnansong/douyu.git"
+  },
+  "keywords": [
+    "douyu"
+  ],
+  "author": "Yingnan Song",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/brentertz/scapegoat/blob/master/LICENSE-MIT"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/yingnansong/douyu/issues"
+  },
+  "homepage": "https://github.com/yingnansong/douyu#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3"
+  }
+}
