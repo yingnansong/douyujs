@@ -1,8 +1,6 @@
 
-var ChatRoom = require('./chatroom/chatroom');
-var ChatRoomStates = require('./chatroom/states');
+var ChatRoom = require('./chat/room');
 
 module.exports = {
-	ChatRoom: ChatRoom,
-	ChatRoomStates: ChatRoomStates
+	ChatRoom: ChatRoom
 };

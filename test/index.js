@@ -1,16 +1,11 @@
-// var should = require('chai').should();
-// var DouyuAPI = require('../index');
-// var room = new DouyuAPI.ChatRoom("584854");
-// room.connect();
+var should = require('chai').should();
+var douyu = require('../index');
 
-// describe("#initialize", function(){
-// 	it('starts up correctly', function(){
-// 		var room = new DouyuAPI.ChatRoom("584854");
-// 		room.connect();
-// 	});
-// });
+describe("#initialize", function(){
+	it('initializes correctly', function(){
+		new douyu.ChatRoom("584854");
+	});
+});
 
-var DouyuAPI = require('../index');
-var room = new DouyuAPI.ChatRoom("3484");
-room.connect();
+
 
