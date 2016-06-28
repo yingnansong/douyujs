@@ -10,6 +10,11 @@ This library has been tested with:
 
 - IO.js v2.5.0
 
+Installation
+------------
+
+	npm install douyu
+
 API Usage
 ---------
 
