@@ -28,7 +28,7 @@ var utils = {
 		return field;
 	},
 
-	serialize: function serialize(data) {
+	serialize: function (data) {
 		var kvPairs = [];
 		for(var key in data) {
 			if(!data.hasOwnProperty(key)) {
@@ -52,6 +52,8 @@ var utils = {
 			var value = utils.unescape(kv[1]);
 			if(value.indexOf("@=") >= 0) {
 				value = utils.deserialize(value);
+			} else if (value.indexOf("@S") >= 0) {
+				value = utils.deserialize(utils.unescape(value));
 			}
 			result[key] = value;
 		});
