@@ -17,9 +17,9 @@ Room.prototype.open = function(){
 	this.client.connect();
 }
 
-Room.prototype.keepAlive = function(){
+Room.prototype.keepLive = function(){
 	this.client.send({
-		type: 'keepalive',
+		type: 'keeplive',
 		tick: Math.floor(new Date().getTime() * 0.001)
 	});
 }
@@ -38,7 +38,7 @@ Room.prototype.onConnected = function(){
 
 	// Send KEEP_ALIVE request every 45 seconds
 	setInterval(function(){
-		self.keepAlive();
+		self.keepLive();
 	}, 45000);
 
 	this.emit('connect');
